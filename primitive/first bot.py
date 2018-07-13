@@ -6,6 +6,7 @@ print("Bot: Welcome to the Coustomer Care Service of XXXXXX Company.May I know y
 bot= ChatBot('Test')
 
 conv = open('chats.txt','r').readlines()
+conv = open('chats_2.txt').readlines()
 bot.set_trainer(ListTrainer)
 #Sets the train
 bot.train(conv)
